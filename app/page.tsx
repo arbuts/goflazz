@@ -1,19 +1,19 @@
-import Container from "@/components/layout/Container";
+import Navbar from "@/components/landing/Navbar";
+import Hero from "@/components/landing/Hero";
+import GradientButton from "@/components/ui/GradientButton";
 
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#F5F7FB]">
-      <Container>
-        <section className="py-20">
-          <h1 className="text-6xl font-bold">
-            GoFlazz
-          </h1>
+      <Navbar />
 
-          <p className="mt-6 max-w-xl text-gray-600">
-            The Premium Apple-Quality Wallet for Arbitrum Micro-Payments.
-          </p>
-        </section>
-      </Container>
+      <Hero />
+
+      <div className="flex justify-center pb-20">
+        <GradientButton>
+          Get Started
+        </GradientButton>
+      </div>
     </main>
   );
 }
